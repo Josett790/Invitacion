@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #082567; /* Azul Marino */
+    color: #FFD700; /* Amarillo Dorado */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    background: #E85D04; /* Naranja */
+    padding: 20px;
+    color: white;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Estilo del contador */
+#contador {
+    background: #FFD700; /* Amarillo */
+    color: #082567; /* Azul Marino */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 50%;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Sección de detalles */
+#info {
+    background: #E85D04; /* Naranja */
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 50%;
+}
+
+/* Animaciones */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sección oculta al inicio */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.image-container {
+    position: fixed; /* Fijarlas en la pantalla */
+    width: 200px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.image-container img {
+    width: 150%; /* Para que la imagen no se salga del contenedor */
+    height: auto;
+    display: block;
+}
+
+.left {
+    left: 100px; /* Separación del borde izquierdo */
+    top: 50%;
+    transform: translateY(-100px);
+}
+
+.right {
+    right: 130px; /* Separación del borde derecho */
+    top: 50%;
+    transform: translateY(100px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
